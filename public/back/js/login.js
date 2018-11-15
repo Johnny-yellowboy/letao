@@ -54,7 +54,8 @@
   *      2. 在事件中, 阻止默认的表单提交, 通过 ajax 提交即可
   * */
   $('#form').on("success.form.bv",function( e ){
-
+    console.log(e);
+    
     e.preventDefault();
 
     $.ajax({
@@ -69,6 +70,8 @@
         }
         if(info.error === 1000){
           // alert("用户名不存在");
+          // console.log(info);
+          
           // 调用插件提供的方法, 将用户名input状态 更新成校验失败状态
           // updateStatus
           // 参数1: 校验字段  username/password
