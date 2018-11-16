@@ -23,7 +23,7 @@ $(function(){
     $('#myModal').modal("show");
   });
   // 模态框的按钮点击事件
-  $('#loginout').click(function(){
+  $('#myModal').click(function(){
 
     // 发送ajax给后台
     $.ajax({
