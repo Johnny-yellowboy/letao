@@ -18,6 +18,7 @@ a:active{
  top: 0;
  z-index: 999;
  background-color:seagreen; 
+ transition: all 1s;
  .title{
    height:50px;
    background-color: #367FA9;
@@ -38,8 +39,8 @@ a:active{
    img{
      display: block;
      margin: 0 auto;
-     width: 100px;
-     height: 100px;
+     width: 80px;
+     height: 80px;
      border-radius: 50%;
    }
    p{
@@ -48,6 +49,9 @@ a:active{
      font-size: 20px;
    }
  }
+}
+.aside.hidemeau{
+  left: -180px;
 }
 .nav{
   width: 100%;
@@ -68,6 +72,9 @@ a:active{
       padding-left: 6px;
     }
   }
+  .child{
+    display: none;
+  }
   .child a{
     padding-left: 60px;
   }
@@ -78,6 +85,7 @@ a:active{
   background-color:gold;
   padding-left: 180px;
   padding-top: 50px;
+  transition: all 1s;
   .topbar{
     padding-left: 180px;
     width: 100%;
@@ -86,6 +94,8 @@ a:active{
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 66;
+    transition: all 1s;
     // padding: 0 50px;
     a {
       width: 50px;
@@ -95,6 +105,9 @@ a:active{
       line-height: 50px;
       font-size: 18px;
     }
+    &.hidemeau{
+      padding-left: 0;
+    }
   }
   .container-fluid{
     margin-top: 20px;
@@ -102,7 +115,14 @@ a:active{
     .echarts_Right{
       width: 46%;
       height: 400px;
-      background-color: skyblue;
+      // background-color: skyblue;
     }
   }
+}
+.main.hidemeau{
+  padding-left: 0;
+}
+
+.modal-body p{
+  color: #A94442;
 }
