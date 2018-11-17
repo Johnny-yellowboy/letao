@@ -1,4 +1,5 @@
-// 基于准备好的dom，初始化echarts实例
+$(function(){
+  // 基于准备好的dom，初始化echarts实例
 var myChart1 = echarts.init(document.getElementById('myChart1'));
 
 // 指定图表的配置项和数据
@@ -87,3 +88,5 @@ option2 = {
   }
 };
 myChart2.setOption(option2);
+
+})

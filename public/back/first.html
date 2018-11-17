@@ -41,8 +41,8 @@
         <ul>
           <li><a href="user.html"><i class="glyphicon glyphicon-user"></i><span>用户管理</span></a></li>
           <li><a href="javascript:;" class="classify"<i class="glyphicon glyphicon-th-list"></i><span>分类管理</span></a>
-              <div class="child">
-                <a href="first.html">一级分类</a>
+              <div class="child" style="display: block;">
+                <a class="current"  href="first.html">一级分类</a>
                 <a href="second.html">二级分类</a>
               </div>
           </li>
@@ -54,31 +54,31 @@
     <div class="main">
       <!-- 大爷,你在哪?? -->
       <div class="topbar">
-        <a href="javascript:;" class="icon_l pull-left"><i class="glyphicon glyphicon-align-justify"></i></a>
-        <a href="javascript:;" class="icon_r pull-right"><i class="glyphicon glyphicon-log-out"></i></a>
+        <a href="javascript:;" class="icon_l pull-left">
+          <i class="glyphicon glyphicon-align-justify"></i>
+        </a>
+        <a href="javascript:;" class="icon_r pull-right">
+          <i class="glyphicon glyphicon-log-out"></i>
+        </a>
       </div>
-      
+    
       <div class="container-fluid">
-          <ol class="breadcrumb">
-            <li>
-              <a href="index.html">管理系统</a>
-            </li>
-            <li class="active">首页</li>
-            <!-- <li class="active">Data</li> -->
-          </ol>
-
-
-            <div class="echarts_Left pull-left  pull-left" id="myChart1"></div>
-            <div class="echarts_Right pull-left pull-right" id="myChart2"></div>
-
-
+        <ol class="breadcrumb">
+          <li>
+            <a href="index.html">管理系统</a>
+          </li>
+          <li class="active">分类管理</li>
+          <li class="active">一级分类</li>
+          <!-- <li class="active">Data</li> -->
+        </ol>
       </div>
     </div>
     <script src="./lib/jquery/jquery.min.js"></script>
     <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
     <script src="./lib/echarts/echarts.min.js"></script>
     <script src="./lib/nprogress/nprogress.js"></script>
-    <script src="./js/index.js"></script>
+    <script src="./lib/artTemplate/template-web.js"></script>
+    <script src="./lib/bootstrap-paginator/bootstrap-paginator.min.js"></script>
     <script src="./js/comment.js"></script>
 </body>
 </html>
