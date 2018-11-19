@@ -96,7 +96,7 @@ validator.methodName(params);
 
 
 
-### 重置表单
+### resetForm()方法:重置表单
 
 重置表单中设置过校验的内容，将隐藏所有错误提示和图标。
 
@@ -104,7 +104,7 @@ validator.methodName(params);
 validator.resetForm();//重置表单，并且会隐藏所有的错误提示和图标
 ```
 
-### 更新字段的状态
+### updateStatus()方法:更新字段的状态
 
 BootstrapValidator在用户输入内容的时候，会做校验，当调用bootstrap的插件的方法可以手动会改变字段值的状态。可以使用`updateStatus(field, status, validatorName)`方法更新字段的状态
 
