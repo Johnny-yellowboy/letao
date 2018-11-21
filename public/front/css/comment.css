@@ -92,3 +92,22 @@ img {
 .lt_container .lt_footer ul li a.current p {
   color: orange;
 }
+.lt_container .lt_product {
+  padding: 10px;
+  text-align: center;
+}
+.lt_container .lt_product li {
+  float: left;
+  width: 48%;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+.lt_container .lt_product li:nth-child(2n) {
+  margin-left: 4%;
+}
+.lt_container .lt_product li .price {
+  color: red;
+}
+.lt_container .lt_product li .old_price {
+  text-decoration: line-through;
+}
